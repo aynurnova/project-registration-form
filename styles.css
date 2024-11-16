@@ -1,0 +1,54 @@
+/* reset the default style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Mulish', san serif;
+}
+/* customize the container and set the dimensions for full screen */
+.container {
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.card {
+    
+    max-width: 50%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* logo styling */
+img {
+    box-sizing: cover;
+    width: 150px;
+    height: 150px;
+    margin-top: -70px;
+    margin-left: -40px;
+}
+/* style the info section */
