@@ -4,51 +4,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* set the body style and size*/
 body {
-    font-family: "Mulish", sans-serif;
-    padding: 100px;
-    margin: 100px; 
-    height: 50vh;
+    font-family: "Mulish", sans-serif;  
 }
 
 /* set the main container size and style */
 .container {
-    width: 65vw;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;   
 }
+
 /* set the  card style*/
  .card {
-
-    width: 100%;
+    width: 60%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     justify-items: center; 
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
 }
-
 
 /* style the left side */
 .left-side {
-    width: 50%;
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 20px;
     background-color: rgb(241, 241, 241);
-
+    padding: 1.5rem;
 }
+
 /* set the size for the logo */
 img {
     height: 160px;
     width: 150px;
     margin-left: 10px;   
-    margin-top: 5px;
-    
+    margin-top: 5px; 
 }
+
 /* set the size for the paragraph */
 p {
     margin: 10px;
@@ -57,18 +56,20 @@ p {
 
 /* style the right side */
 .right-side {
-    width: 50%;
     height: 100%;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    gap: 15px;
+    padding: 1.5rem;
 }
+
 /* set the size and style for header */
 .right-side> .header {  
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bolder;
-    margin: 10px;
+    margin-bottom: 1.5rem;
 }
+
 /* set input section display */
 .input-section {
     display: flex;
@@ -76,11 +77,12 @@ p {
     justify-content: space-between;
     gap: 10px;
 }
+
 /* set the name section display */
 .full-name-input {
+    width: 100%;
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;  
 }
 
 /* set the email and password display */
@@ -89,18 +91,32 @@ p {
     flex-direction: column;
     gap: 10px;
 }
+
 /* style the input boxes */
 [id] {
     border: 2px solid lightgray;
 }
+
 #first-name,  #last-name, #email, #password {
     padding: 9px;
-    width: 90%;
 }
+
+input {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#checkbox {
+    width: auto;
+}
+
 /* style the font of the labels */
 [for] {
     color: rgb(98, 96, 96);
+    font-size: 1.2rem;
 }
+
 /* set the size and style for buttons */
 button {
     width: 95px;
@@ -114,10 +130,16 @@ button {
     cursor: pointer;
     transition: all 0.5s ease;
 }
+
 button:hover {
     background-color: rgb(94, 182, 182);
     transform: scale(1.1);
 }
-.button2 {
-    margin-bottom: -300px;
+
+/* set max width on smaller screens */
+
+@media (max-width: 976px) {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
