@@ -7,21 +7,16 @@
 /* set the body style and size*/
 body {
     font-family: "Mulish", sans-serif;
-
     padding: 100px;
-    margin: 100px;
-    
+    margin: 100px; 
     height: 50vh;
 }
 
 /* set the main container size and style */
 .container {
-
     width: 65vw;
-
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +29,6 @@ body {
     display: flex;
     justify-content: center;
     justify-items: center; 
-
 }
 
 
@@ -70,8 +64,7 @@ p {
     gap: 15px;
 }
 /* set the size and style for header */
-.right-side> .header {
-    
+.right-side> .header {  
     font-size: 15px;
     font-weight: bolder;
     margin: 10px;
@@ -88,7 +81,6 @@ p {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;  
-
 }
 
 /* set the email and password display */
@@ -97,8 +89,6 @@ p {
     flex-direction: column;
     gap: 10px;
 }
-/* syle the checkbox section */
-
 /* style the input boxes */
 [id] {
     border: 2px solid lightgray;
